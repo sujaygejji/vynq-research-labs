@@ -1,6 +1,5 @@
 /* =========================================================
    VYNQ RESEARCH LABS
-   ENTERPRISE AI WEBSITE
 ========================================================= */
 
 * {
@@ -58,9 +57,9 @@ textarea {
 
     width: 100%;
 
-    height: 110px;
+    height: 88px;
 
-    background: rgba(255, 255, 255, 0.96);
+    background: rgba(255, 255, 255, 0.97);
 
     backdrop-filter: blur(14px);
 
@@ -110,11 +109,11 @@ textarea {
 
     align-items: center;
 
-    font-size: 50px;
+    font-size: 43px;
 
     font-weight: 700;
 
-    letter-spacing: 5px;
+    letter-spacing: 4px;
 
     line-height: 0.85;
 
@@ -123,12 +122,12 @@ textarea {
 
 
 .brand-name span:nth-child(2) {
-    color: #1F3FE8;
+    color: #2147E8;
 }
 
 
 .brand-name span:nth-child(3) {
-    color: #4427C7;
+    color: #4727D0;
 }
 
 
@@ -138,15 +137,15 @@ textarea {
 
 
 .brand-subtitle {
-    margin-top: 10px;
+    margin-top: 8px;
 
-    margin-left: 3px;
+    margin-left: 2px;
 
-    font-size: 10px;
+    font-size: 9px;
 
     font-weight: 600;
 
-    letter-spacing: 4px;
+    letter-spacing: 3.5px;
 
     color: #64748B;
 }
@@ -162,7 +161,7 @@ textarea {
 
     align-items: center;
 
-    gap: 44px;
+    gap: 42px;
 }
 
 
@@ -175,19 +174,19 @@ textarea {
 
     font-weight: 500;
 
-    padding: 10px 0;
+    padding: 8px 0;
 
     transition: 0.25s ease;
 }
 
 
 .nav-menu a:hover {
-    color: #1F52D8;
+    color: #1758DE;
 }
 
 
 .nav-menu a.active {
-    color: #1754E8;
+    color: #1758DE;
 }
 
 
@@ -196,7 +195,7 @@ textarea {
 
     position: absolute;
 
-    bottom: -10px;
+    bottom: -7px;
 
     left: 50%;
 
@@ -206,7 +205,7 @@ textarea {
 
     height: 2px;
 
-    background: #1E55E8;
+    background: #1758DE;
 }
 
 
@@ -219,7 +218,7 @@ textarea {
 
     color: #10233F;
 
-    font-size: 24px;
+    font-size: 23px;
 
     cursor: pointer;
 }
@@ -231,13 +230,11 @@ textarea {
 ========================================================= */
 
 .hero-section {
-    padding-top: 110px;
-
-    min-height: 850px;
+    padding-top: 88px;
 
     background:
         radial-gradient(
-            circle at 85% 45%,
+            circle at 85% 40%,
             rgba(40, 89, 230, 0.045),
             transparent 35%
         ),
@@ -250,13 +247,13 @@ textarea {
 
     margin: auto;
 
-    padding: 55px 45px 65px;
+    padding: 50px 45px 45px;
 
     display: grid;
 
-    grid-template-columns: 0.95fr 1.05fr;
+    grid-template-columns: 0.93fr 1.07fr;
 
-    gap: 55px;
+    gap: 48px;
 
     align-items: center;
 }
@@ -268,7 +265,7 @@ textarea {
 ========================================================= */
 
 .hero-left {
-    padding-top: 15px;
+    padding-top: 5px;
 }
 
 
@@ -277,22 +274,22 @@ textarea {
 
     align-items: center;
 
-    gap: 14px;
+    gap: 13px;
 
     color: #1458D8;
 
-    font-size: 12px;
+    font-size: 11px;
 
     font-weight: 700;
 
-    letter-spacing: 2px;
+    letter-spacing: 1.8px;
 
-    margin-bottom: 32px;
+    margin-bottom: 24px;
 }
 
 
 .eyebrow-line {
-    width: 27px;
+    width: 28px;
 
     height: 2px;
 
@@ -301,9 +298,9 @@ textarea {
 
 
 .hero-left h1 {
-    font-size: clamp(50px, 5vw, 72px);
+    font-size: clamp(48px, 4.8vw, 68px);
 
-    line-height: 1.02;
+    line-height: 1.01;
 
     font-weight: 600;
 
@@ -332,61 +329,13 @@ textarea {
 .hero-description {
     max-width: 650px;
 
-    margin-top: 30px;
+    margin-top: 24px;
 
     color: #526984;
 
-    font-size: 17px;
+    font-size: 16px;
 
-    line-height: 1.75;
-}
-
-
-
-/* =========================================================
-   VYNQ MEANING
-========================================================= */
-
-.vynq-meaning {
-    display: flex;
-
-    align-items: stretch;
-
-    gap: 17px;
-
-    margin-top: 23px;
-
-    max-width: 650px;
-}
-
-
-.meaning-line {
-    width: 3px;
-
-    flex-shrink: 0;
-
-    background: #E3262E;
-
-    border-radius: 2px;
-}
-
-
-.meaning-text {
-    color: #172842;
-
-    font-size: 15px;
-
-    line-height: 1.55;
-}
-
-
-.meaning-text strong {
-    font-weight: 700;
-}
-
-
-.meaning-text span {
-    color: #64748B;
+    line-height: 1.65;
 }
 
 
@@ -398,9 +347,9 @@ textarea {
 .hero-buttons {
     display: flex;
 
-    gap: 14px;
+    gap: 13px;
 
-    margin-top: 28px;
+    margin-top: 24px;
 }
 
 
@@ -411,9 +360,9 @@ textarea {
 
     justify-content: center;
 
-    gap: 15px;
+    gap: 14px;
 
-    padding: 14px 24px;
+    padding: 13px 22px;
 
     border: none;
 
@@ -427,7 +376,7 @@ textarea {
 
     color: #FFFFFF;
 
-    font-size: 14px;
+    font-size: 13px;
 
     font-weight: 600;
 
@@ -452,7 +401,7 @@ textarea {
 
     justify-content: center;
 
-    padding: 13px 24px;
+    padding: 12px 22px;
 
     border: 1px solid #8BA7E9;
 
@@ -460,7 +409,7 @@ textarea {
 
     color: #172842;
 
-    font-size: 14px;
+    font-size: 13px;
 
     font-weight: 600;
 
@@ -485,9 +434,9 @@ textarea {
 
     grid-template-columns: repeat(3, 1fr);
 
-    gap: 18px;
+    gap: 15px;
 
-    margin-top: 42px;
+    margin-top: 30px;
 }
 
 
@@ -496,9 +445,9 @@ textarea {
 
     align-items: flex-start;
 
-    gap: 12px;
+    gap: 10px;
 
-    padding-right: 15px;
+    padding-right: 13px;
 
     border-right: 1px solid #DCE5EE;
 }
@@ -514,7 +463,7 @@ textarea {
 
     color: #155BE0;
 
-    font-size: 21px;
+    font-size: 19px;
 
     padding-top: 2px;
 }
@@ -533,18 +482,18 @@ textarea {
 .value-item h3 {
     color: #1254D7;
 
-    font-size: 13px;
+    font-size: 12px;
 
-    margin-bottom: 7px;
+    margin-bottom: 5px;
 }
 
 
 .value-item p {
     color: #64748B;
 
-    font-size: 10.5px;
+    font-size: 9.5px;
 
-    line-height: 1.55;
+    line-height: 1.5;
 }
 
 
@@ -569,22 +518,19 @@ textarea {
 
     border: 1px solid #DCE5EF;
 
-    border-radius: 16px;
+    border-radius: 15px;
 
     overflow: hidden;
 
     box-shadow:
-        0 20px 60px rgba(25, 53, 100, 0.08);
+        0 18px 55px rgba(25, 53, 100, 0.075);
 }
 
 
-
-/* Pipeline header */
-
 .pipeline-header {
-    height: 70px;
+    height: 64px;
 
-    padding: 0 30px;
+    padding: 0 28px;
 
     display: flex;
 
@@ -596,11 +542,11 @@ textarea {
 
     color: #5C6E87;
 
-    font-size: 12px;
+    font-size: 11px;
 
     font-weight: 700;
 
-    letter-spacing: 2px;
+    letter-spacing: 1.8px;
 }
 
 
@@ -618,9 +564,9 @@ textarea {
 
 
 .status-dot {
-    width: 8px;
+    width: 7px;
 
-    height: 8px;
+    height: 7px;
 
     border-radius: 50%;
 
@@ -629,12 +575,14 @@ textarea {
 
 
 
-/* Pipeline body */
+/* =========================================================
+   PIPELINE BODY
+========================================================= */
 
 .pipeline-body {
     position: relative;
 
-    padding: 12px 38px;
+    padding: 7px 36px;
 }
 
 
@@ -643,13 +591,15 @@ textarea {
 
     position: absolute;
 
-    top: 55px;
+    top: 48px;
 
-    bottom: 55px;
+    bottom: 48px;
 
-    left: 75px;
+    left: 68px;
 
-    width: 2px;
+    width: 1px;
+
+    opacity: 0.7;
 
     background: linear-gradient(
         to bottom,
@@ -663,13 +613,13 @@ textarea {
 .pipeline-step {
     position: relative;
 
-    min-height: 108px;
+    min-height: 92px;
 
     display: flex;
 
     align-items: center;
 
-    gap: 25px;
+    gap: 24px;
 
     border-bottom: 1px solid #E6ECF2;
 }
@@ -685,9 +635,9 @@ textarea {
 
     z-index: 2;
 
-    width: 64px;
+    width: 58px;
 
-    height: 64px;
+    height: 58px;
 
     flex-shrink: 0;
 
@@ -697,13 +647,15 @@ textarea {
 
     justify-content: center;
 
-    border-radius: 12px;
+    border-radius: 11px;
 
-    font-size: 24px;
+    font-size: 22px;
 
     background: #EFF5FC;
 
     color: #1458D8;
+
+    transition: 0.25s ease;
 }
 
 
@@ -726,18 +678,18 @@ textarea {
 
     color: #11243F;
 
-    font-size: 17px;
+    font-size: 16px;
 
     font-weight: 600;
 
-    margin-bottom: 7px;
+    margin-bottom: 5px;
 }
 
 
 .pipeline-content p {
     color: #62758D;
 
-    font-size: 12px;
+    font-size: 11px;
 }
 
 
@@ -752,21 +704,19 @@ textarea {
     grid-template-columns: repeat(4, 1fr);
 
     border-top: 1px solid #E1E8F0;
-
-    background: #FFFFFF;
 }
 
 
 .pipeline-metric {
-    min-height: 105px;
+    min-height: 83px;
 
-    padding: 18px;
+    padding: 14px;
 
     display: flex;
 
     align-items: flex-start;
 
-    gap: 13px;
+    gap: 10px;
 
     border-right: 1px solid #E2E8EF;
 }
@@ -780,9 +730,9 @@ textarea {
 .pipeline-metric > i {
     color: #31496B;
 
-    font-size: 20px;
+    font-size: 18px;
 
-    padding-top: 3px;
+    padding-top: 2px;
 }
 
 
@@ -801,11 +751,11 @@ textarea {
 
     color: #172842;
 
-    font-size: 9px;
+    font-size: 8px;
 
-    letter-spacing: 1.1px;
+    letter-spacing: 0.9px;
 
-    margin-bottom: 5px;
+    margin-bottom: 4px;
 }
 
 
@@ -814,9 +764,9 @@ textarea {
 
     color: #718197;
 
-    font-size: 9px;
+    font-size: 8px;
 
-    line-height: 1.45;
+    line-height: 1.4;
 }
 
 
@@ -830,14 +780,14 @@ textarea {
 
     margin: auto;
 
-    padding: 110px 30px;
+    padding: 90px 30px;
 }
 
 
 .section-heading {
     max-width: 760px;
 
-    margin: 0 auto 60px;
+    margin: 0 auto 48px;
 
     text-align: center;
 }
@@ -855,24 +805,24 @@ textarea {
 
     color: #1558D8;
 
-    font-size: 11px;
+    font-size: 10px;
 
     font-weight: 700;
 
     letter-spacing: 2px;
 
-    margin-bottom: 15px;
+    margin-bottom: 13px;
 }
 
 
 .section-heading h2 {
     color: #10233F;
 
-    font-size: 43px;
+    font-size: 40px;
 
     line-height: 1.18;
 
-    letter-spacing: -1.5px;
+    letter-spacing: -1.3px;
 }
 
 
@@ -882,11 +832,11 @@ textarea {
 
 
 .section-heading p {
-    margin-top: 20px;
+    margin-top: 17px;
 
     color: #64748B;
 
-    font-size: 16px;
+    font-size: 15px;
 }
 
 
@@ -905,22 +855,22 @@ textarea {
 
     grid-template-columns: repeat(4, 1fr);
 
-    gap: 18px;
+    gap: 16px;
 }
 
 
 .platform-card {
     position: relative;
 
-    min-height: 350px;
+    min-height: 320px;
 
-    padding: 28px;
+    padding: 25px;
 
     background: #FFFFFF;
 
     border: 1px solid #DFE7EF;
 
-    border-radius: 12px;
+    border-radius: 11px;
 
     transition: 0.25s ease;
 }
@@ -944,22 +894,22 @@ textarea {
 .card-number {
     position: absolute;
 
-    top: 20px;
+    top: 18px;
 
-    right: 22px;
+    right: 20px;
 
     color: #A5B1BF;
 
-    font-size: 10px;
+    font-size: 9px;
 
     font-weight: 700;
 }
 
 
 .card-icon {
-    width: 48px;
+    width: 45px;
 
-    height: 48px;
+    height: 45px;
 
     display: flex;
 
@@ -973,25 +923,25 @@ textarea {
 
     color: #1458D8;
 
-    margin-bottom: 25px;
+    margin-bottom: 22px;
 }
 
 
 .platform-card h3 {
     color: #142740;
 
-    font-size: 19px;
+    font-size: 18px;
 
-    margin-bottom: 13px;
+    margin-bottom: 11px;
 }
 
 
 .platform-card p {
     color: #66788E;
 
-    font-size: 13px;
+    font-size: 12px;
 
-    line-height: 1.7;
+    line-height: 1.65;
 }
 
 
@@ -1002,7 +952,7 @@ textarea {
 
     gap: 6px;
 
-    margin-top: 24px;
+    margin-top: 20px;
 }
 
 
@@ -1015,7 +965,7 @@ textarea {
 
     color: #718095;
 
-    font-size: 9px;
+    font-size: 8px;
 }
 
 
@@ -1037,13 +987,13 @@ textarea {
 .research-item {
     display: grid;
 
-    grid-template-columns: 65px 1fr 25px;
+    grid-template-columns: 55px 1fr 25px;
 
-    gap: 25px;
+    gap: 22px;
 
     align-items: center;
 
-    padding: 28px 8px;
+    padding: 24px 8px;
 
     border-bottom: 1px solid #DCE5ED;
 
@@ -1052,14 +1002,14 @@ textarea {
 
 
 .research-item:hover {
-    padding-left: 18px;
+    padding-left: 15px;
 }
 
 
 .research-number {
     color: #1759D9;
 
-    font-size: 11px;
+    font-size: 10px;
 
     font-weight: 700;
 }
@@ -1068,9 +1018,9 @@ textarea {
 .research-item h3 {
     color: #142740;
 
-    font-size: 20px;
+    font-size: 19px;
 
-    margin-bottom: 7px;
+    margin-bottom: 5px;
 }
 
 
@@ -1079,14 +1029,14 @@ textarea {
 
     color: #6B7C90;
 
-    font-size: 13px;
+    font-size: 12px;
 }
 
 
 .research-item > i {
     color: #9BA9B8;
 
-    font-size: 12px;
+    font-size: 11px;
 }
 
 
@@ -1105,12 +1055,12 @@ textarea {
 
     grid-template-columns: repeat(3, 1fr);
 
-    gap: 18px;
+    gap: 16px;
 }
 
 
 .application-card {
-    padding: 30px;
+    padding: 27px;
 
     background: #FFFFFF;
 
@@ -1130,9 +1080,9 @@ textarea {
 
 
 .application-icon {
-    width: 44px;
+    width: 42px;
 
-    height: 44px;
+    height: 42px;
 
     display: flex;
 
@@ -1146,23 +1096,23 @@ textarea {
 
     border-radius: 8px;
 
-    margin-bottom: 20px;
+    margin-bottom: 18px;
 }
 
 
 .application-card h3 {
-    font-size: 18px;
+    font-size: 17px;
 
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 
 .application-card p {
     color: #697B8F;
 
-    font-size: 13px;
+    font-size: 12px;
 
-    line-height: 1.7;
+    line-height: 1.65;
 }
 
 
@@ -1183,7 +1133,7 @@ textarea {
 
     grid-template-columns: 1fr 0.8fr;
 
-    gap: 90px;
+    gap: 75px;
 
     align-items: center;
 }
@@ -1195,11 +1145,11 @@ textarea {
 
 
 .about-grid h2 {
-    font-size: 43px;
+    font-size: 40px;
 
-    line-height: 1.2;
+    line-height: 1.18;
 
-    margin-bottom: 25px;
+    margin-bottom: 22px;
 }
 
 
@@ -1208,16 +1158,59 @@ textarea {
 
     color: #B8C7D8;
 
-    font-size: 14px;
+    font-size: 13px;
 
-    line-height: 1.8;
+    line-height: 1.75;
 
-    margin-bottom: 18px;
+    margin-bottom: 16px;
+}
+
+
+
+/* BRAND MEANING */
+
+.brand-meaning {
+    margin-top: 25px;
+
+    padding-left: 16px;
+
+    border-left: 2px solid #E3262E;
+}
+
+
+.brand-meaning strong {
+    font-family: "Space Grotesk", sans-serif;
+
+    color: #FFFFFF;
+
+    font-size: 17px;
+
+    letter-spacing: 2px;
+}
+
+
+.brand-meaning span {
+    margin-left: 8px;
+
+    color: #8EA3BC;
+
+    font-size: 11px;
+}
+
+
+.brand-meaning p {
+    margin-top: 5px;
+
+    margin-bottom: 0;
+
+    color: #B8C7D8;
+
+    font-size: 12px;
 }
 
 
 .about-visual {
-    min-height: 300px;
+    min-height: 260px;
 
     display: flex;
 
@@ -1240,14 +1233,14 @@ textarea {
 
     justify-content: center;
 
-    gap: 13px;
+    gap: 12px;
 
     flex-wrap: wrap;
 }
 
 
 .about-equation span {
-    padding: 12px 15px;
+    padding: 11px 14px;
 
     border: 1px solid rgba(255,255,255,0.2);
 
@@ -1255,7 +1248,7 @@ textarea {
 
     color: #FFFFFF;
 
-    font-size: 11px;
+    font-size: 10px;
 
     font-weight: 700;
 
@@ -1266,7 +1259,7 @@ textarea {
 .about-equation i {
     color: #648DFF;
 
-    font-size: 12px;
+    font-size: 11px;
 }
 
 
@@ -1285,9 +1278,9 @@ textarea {
 
     grid-template-columns: 0.9fr 1.1fr;
 
-    gap: 70px;
+    gap: 60px;
 
-    padding: 55px;
+    padding: 48px;
 
     background: #FFFFFF;
 
@@ -1303,20 +1296,20 @@ textarea {
 .contact-intro h2 {
     color: #10233F;
 
-    font-size: 36px;
+    font-size: 34px;
 
-    line-height: 1.25;
+    line-height: 1.22;
 
-    margin-bottom: 18px;
+    margin-bottom: 16px;
 }
 
 
 .contact-intro p {
     color: #687B90;
 
-    font-size: 14px;
+    font-size: 13px;
 
-    line-height: 1.8;
+    line-height: 1.75;
 }
 
 
@@ -1325,7 +1318,7 @@ textarea {
 
     flex-direction: column;
 
-    gap: 14px;
+    gap: 13px;
 }
 
 
@@ -1334,7 +1327,7 @@ textarea {
 
     grid-template-columns: 1fr 1fr;
 
-    gap: 14px;
+    gap: 13px;
 }
 
 
@@ -1342,7 +1335,7 @@ textarea {
 .contact-form textarea {
     width: 100%;
 
-    padding: 13px 15px;
+    padding: 12px 14px;
 
     border: 1px solid #DCE5ED;
 
@@ -1354,7 +1347,7 @@ textarea {
 
     color: #182B44;
 
-    font-size: 13px;
+    font-size: 12px;
 }
 
 
@@ -1393,7 +1386,7 @@ footer {
 
     margin: auto;
 
-    padding: 32px 30px;
+    padding: 28px 30px;
 
     display: grid;
 
@@ -1401,14 +1394,14 @@ footer {
 
     align-items: center;
 
-    gap: 30px;
+    gap: 25px;
 }
 
 
 .footer-vynq {
     font-family: "Space Grotesk", sans-serif;
 
-    font-size: 25px;
+    font-size: 23px;
 
     font-weight: 700;
 
@@ -1419,11 +1412,11 @@ footer {
 
 
 .footer-labs {
-    margin-top: 4px;
+    margin-top: 3px;
 
     color: #7D8EA2;
 
-    font-size: 8px;
+    font-size: 7px;
 
     letter-spacing: 2.5px;
 }
@@ -1434,18 +1427,18 @@ footer {
 
     color: #8C9AAC;
 
-    font-size: 11px;
+    font-size: 10px;
 }
 
 
 .footer-center span {
     display: block;
 
-    margin-top: 4px;
+    margin-top: 3px;
 
     color: #5D7086;
 
-    font-size: 9px;
+    font-size: 8px;
 }
 
 
@@ -1454,14 +1447,14 @@ footer {
 
     justify-content: flex-end;
 
-    gap: 18px;
+    gap: 16px;
 }
 
 
 .footer-links a {
     color: #8C9AAC;
 
-    font-size: 10px;
+    font-size: 9px;
 }
 
 
@@ -1472,7 +1465,7 @@ footer {
 
 
 /* =========================================================
-   RESPONSIVE
+   TABLET
 ========================================================= */
 
 @media (max-width: 1150px) {
@@ -1485,7 +1478,7 @@ footer {
     .hero-container {
         grid-template-columns: 1fr;
 
-        gap: 50px;
+        gap: 45px;
     }
 
 
@@ -1506,10 +1499,15 @@ footer {
 }
 
 
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
 @media (max-width: 850px) {
 
     .navbar {
-        height: 82px;
+        height: 78px;
     }
 
 
@@ -1519,7 +1517,7 @@ footer {
 
 
     .brand-name {
-        font-size: 35px;
+        font-size: 34px;
     }
 
 
@@ -1533,7 +1531,7 @@ footer {
     .nav-menu {
         position: absolute;
 
-        top: 82px;
+        top: 78px;
 
         left: 0;
 
@@ -1543,9 +1541,11 @@ footer {
 
         flex-direction: column;
 
-        gap: 10px;
+        align-items: flex-start;
 
-        padding: 22px;
+        gap: 4px;
+
+        padding: 18px 22px;
 
         background: #FFFFFF;
 
@@ -1569,17 +1569,19 @@ footer {
 
 
     .hero-section {
-        padding-top: 82px;
+        padding-top: 78px;
     }
 
 
     .hero-container {
-        padding: 60px 22px;
+        padding: 48px 22px 40px;
+
+        gap: 40px;
     }
 
 
     .hero-left h1 {
-        font-size: 47px;
+        font-size: 44px;
 
         letter-spacing: -2px;
     }
@@ -1587,6 +1589,10 @@ footer {
 
     .hero-values {
         grid-template-columns: 1fr;
+
+        gap: 12px;
+
+        margin-top: 25px;
     }
 
 
@@ -1595,7 +1601,12 @@ footer {
 
         border-bottom: 1px solid #DCE5EE;
 
-        padding-bottom: 15px;
+        padding-bottom: 12px;
+    }
+
+
+    .value-item:last-child {
+        border-bottom: none;
     }
 
 
@@ -1617,7 +1628,7 @@ footer {
     .contact-box {
         grid-template-columns: 1fr;
 
-        padding: 35px 25px;
+        padding: 32px 24px;
     }
 
 
@@ -1635,10 +1646,22 @@ footer {
 }
 
 
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
 @media (max-width: 600px) {
 
     .hero-left h1 {
-        font-size: 40px;
+        font-size: 38px;
+
+        line-height: 1.04;
+    }
+
+
+    .hero-description {
+        font-size: 14px;
     }
 
 
@@ -1654,17 +1677,19 @@ footer {
 
 
     .pipeline-header {
-        padding: 0 18px;
+        padding: 0 17px;
+
+        font-size: 9px;
     }
 
 
     .pipeline-body {
-        padding: 10px 18px;
+        padding: 5px 17px;
     }
 
 
     .pipeline-body::before {
-        left: 50px;
+        left: 52px;
     }
 
 
@@ -1677,18 +1702,20 @@ footer {
     }
 
 
+    .pipeline-step {
+        min-height: 82px;
+
+        gap: 14px;
+    }
+
+
     .pipeline-content h3 {
-        font-size: 14px;
+        font-size: 13px;
     }
 
 
     .pipeline-content p {
-        font-size: 10px;
-    }
-
-
-    .pipeline-step {
-        gap: 16px;
+        font-size: 9px;
     }
 
 
@@ -1710,8 +1737,13 @@ footer {
     }
 
 
+    .section-container {
+        padding: 70px 22px;
+    }
+
+
     .section-heading h2 {
-        font-size: 34px;
+        font-size: 32px;
     }
 
 
@@ -1731,7 +1763,7 @@ footer {
 
 
     .about-grid h2 {
-        font-size: 34px;
+        font-size: 32px;
     }
 
 }
