@@ -7,30 +7,29 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Vynq Research Labs | Enterprise AI Infrastructure</title>
+    <title>VYNQ Research Labs | Enterprise AI Infrastructure</title>
 
-    <meta name="description"
-          content="Vynq Research Labs researches and develops AI infrastructure for ingesting, understanding, structuring and validating complex enterprise data.">
-
-    <meta name="keywords"
-          content="Vynq Research Labs, enterprise AI, enterprise data ingestion, multimodal AI, document intelligence, computer vision, AI infrastructure">
+    <meta
+        name="description"
+        content="VYNQ Research Labs builds intelligent systems for ingesting, understanding, structuring and validating complex enterprise data."
+    >
 
     <link rel="icon" type="image/png" href="logo.png">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
+        rel="stylesheet"
+    >
 
     <!-- Font Awesome -->
     <link
         rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
 
-    <!-- Main CSS -->
     <link rel="stylesheet" href="style.css">
 
 </head>
@@ -39,34 +38,35 @@
 <body>
 
 
-<!-- =========================================================
+<!-- =====================================================
      NAVBAR
-========================================================= -->
+===================================================== -->
 
 <header class="navbar">
 
     <div class="nav-container">
 
-        <a href="#home" class="logo-area">
+        <a href="#home" class="brand">
 
-    <div class="brand-text">
+            <div class="brand-name">
 
-        <span class="brand-name">
-            VYNQ
-        </span>
+                <span>V</span>
+                <span>Y</span>
+                <span>N</span>
+                <span class="brand-q">Q</span>
 
-        <span class="brand-subtitle">
-            RESEARCH LABS
-        </span>
+            </div>
 
-    </div>
+            <div class="brand-subtitle">
+                RESEARCH LABS
+            </div>
 
-</a>
+        </a>
 
 
         <nav class="nav-menu">
 
-            <a href="#home">Home</a>
+            <a href="#home" class="active">Home</a>
 
             <a href="#platform">Platform</a>
 
@@ -82,8 +82,8 @@
 
 
         <button
-            class="mobile-menu-btn"
-            aria-label="Open navigation menu">
+            class="mobile-menu-button"
+            aria-label="Open menu">
 
             <i class="fa-solid fa-bars"></i>
 
@@ -95,9 +95,11 @@
 
 
 
-<!-- =========================================================
+<!-- =====================================================
      HERO
-========================================================= -->
+===================================================== -->
+
+<main>
 
 <section id="home" class="hero-section">
 
@@ -106,9 +108,10 @@
 
         <!-- LEFT SIDE -->
 
-        <div class="hero-content">
+        <div class="hero-left">
 
-            <div class="hero-eyebrow">
+
+            <div class="eyebrow">
 
                 <span class="eyebrow-line"></span>
 
@@ -119,7 +122,12 @@
 
             <h1>
 
-                Making complex enterprise data
+                Making complex
+                <br>
+
+                enterprise data
+                <br>
+
                 <span>ready for AI.</span>
 
             </h1>
@@ -133,6 +141,30 @@
 
             </p>
 
+
+            <!-- VYNQ MEANING -->
+
+            <div class="vynq-meaning">
+
+                <div class="meaning-line"></div>
+
+                <div class="meaning-text">
+
+                    <strong>VYNQ</strong>
+                    <span>(pronounced “vink”)</span>:
+
+                    From the idea of
+                    <strong>“Sync”</strong>
+
+                    — aligned, connected,
+                    and in harmony with your data.
+
+                </div>
+
+            </div>
+
+
+            <!-- BUTTONS -->
 
             <div class="hero-buttons">
 
@@ -158,11 +190,76 @@
             </div>
 
 
-            <div class="hero-note">
+            <!-- THREE VALUE POINTS -->
 
-                <span class="status-dot"></span>
+            <div class="hero-values">
 
-                Research-driven · Enterprise-focused · AI-ready
+
+                <div class="value-item">
+
+                    <div class="value-icon">
+
+                        <i class="fa-solid fa-shield-halved"></i>
+
+                    </div>
+
+                    <div>
+
+                        <h3>Research-driven</h3>
+
+                        <p>
+                            Building state-of-the-art AI systems
+                            with rigor and reproducibility.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="value-item">
+
+                    <div class="value-icon">
+
+                        <i class="fa-solid fa-building"></i>
+
+                    </div>
+
+                    <div>
+
+                        <h3>Enterprise-focused</h3>
+
+                        <p>
+                            Solving real-world data challenges
+                            for large-scale organizations.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="value-item">
+
+                    <div class="value-icon">
+
+                        <i class="fa-solid fa-network-wired"></i>
+
+                    </div>
+
+                    <div>
+
+                        <h3>AI-ready</h3>
+
+                        <p>
+                            Delivering high-quality, structured
+                            and trusted data for AI outcomes.
+                        </p>
+
+                    </div>
+
+                </div>
+
 
             </div>
 
@@ -170,20 +267,27 @@
 
 
 
-        <!-- RIGHT SIDE DATA FLOW -->
+        <!-- =================================================
+             RIGHT DATA PIPELINE
+        ================================================= -->
 
-        <div class="hero-visual">
-
-            <div class="data-flow-card">
+        <div class="hero-right">
 
 
-                <div class="flow-label">
+            <div class="pipeline-card">
 
-                    <span>VYNQ DATA INTELLIGENCE</span>
 
-                    <span class="live-indicator">
+                <!-- CARD HEADER -->
 
-                        <span></span>
+                <div class="pipeline-header">
+
+                    <span>
+                        VYNQ DATA INTELLIGENCE
+                    </span>
+
+                    <span class="pipeline-status">
+
+                        <span class="status-dot"></span>
 
                         PIPELINE
 
@@ -192,96 +296,190 @@
                 </div>
 
 
-                <div class="flow-container">
+
+                <!-- PIPELINE BODY -->
+
+                <div class="pipeline-body">
 
 
-                    <div class="flow-node">
+                    <!-- STEP 1 -->
 
-                        <div class="node-icon">
+                    <div class="pipeline-step">
+
+                        <div class="pipeline-marker blue">
 
                             <i class="fa-solid fa-database"></i>
 
                         </div>
 
-                        <div>
 
-                            <strong>Enterprise Data</strong>
+                        <div class="pipeline-content">
 
-                            <small>
+                            <h3>
+                                Enterprise Data
+                            </h3>
+
+                            <p>
                                 Documents · Files · Images · Legacy Data
-                            </small>
+                            </p>
 
                         </div>
 
                     </div>
 
 
-                    <div class="flow-line"></div>
 
+                    <!-- STEP 2 -->
 
-                    <div class="flow-node active">
+                    <div class="pipeline-step">
 
-                        <div class="node-icon">
+                        <div class="pipeline-marker blue">
 
                             <i class="fa-solid fa-layer-group"></i>
 
                         </div>
 
-                        <div>
 
-                            <strong>Data Ingestion</strong>
+                        <div class="pipeline-content">
 
-                            <small>
+                            <h3>
+                                Data Ingestion
+                            </h3>
+
+                            <p>
                                 Collect · Normalize · Connect
-                            </small>
+                            </p>
 
                         </div>
 
                     </div>
 
 
-                    <div class="flow-line"></div>
 
+                    <!-- STEP 3 -->
 
-                    <div class="flow-node">
+                    <div class="pipeline-step">
 
-                        <div class="node-icon">
+                        <div class="pipeline-marker purple">
 
                             <i class="fa-solid fa-brain"></i>
 
                         </div>
 
-                        <div>
 
-                            <strong>Multimodal Understanding</strong>
+                        <div class="pipeline-content">
 
-                            <small>
+                            <h3>
+                                Multimodal Understanding
+                            </h3>
+
+                            <p>
                                 Text · Vision · Tables · Layout
-                            </small>
+                            </p>
 
                         </div>
 
                     </div>
 
 
-                    <div class="flow-line"></div>
 
+                    <!-- STEP 4 -->
 
-                    <div class="flow-node">
+                    <div class="pipeline-step last">
 
-                        <div class="node-icon">
+                        <div class="pipeline-marker red">
 
-                            <i class="fa-solid fa-cubes-stacked"></i>
+                            <i class="fa-solid fa-sitemap"></i>
 
                         </div>
+
+
+                        <div class="pipeline-content">
+
+                            <h3>
+                                AI-Ready Intelligence
+                            </h3>
+
+                            <p>
+                                Structured · Validated · Traceable
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- PIPELINE FOOTER -->
+
+                <div class="pipeline-footer">
+
+
+                    <div class="pipeline-metric">
+
+                        <i class="fa-solid fa-building-columns"></i>
 
                         <div>
 
-                            <strong>AI-Ready Intelligence</strong>
+                            <strong>ENTERPRISE GRADE</strong>
 
-                            <small>
-                                Structured · Validated · Traceable
-                            </small>
+                            <span>
+                                Secure. Scalable. Reliable.
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="pipeline-metric">
+
+                        <i class="fa-solid fa-shield-halved"></i>
+
+                        <div>
+
+                            <strong>TRUSTED DATA</strong>
+
+                            <span>
+                                Quality you can trust.
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="pipeline-metric">
+
+                        <i class="fa-solid fa-bolt"></i>
+
+                        <div>
+
+                            <strong>AI ACCELERATION</strong>
+
+                            <span>
+                                Better data. Better AI.
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="pipeline-metric">
+
+                        <i class="fa-solid fa-users"></i>
+
+                        <div>
+
+                            <strong>REAL IMPACT</strong>
+
+                            <span>
+                                Solutions that scale.
+                            </span>
 
                         </div>
 
@@ -290,19 +488,6 @@
 
                 </div>
 
-
-                <div class="flow-footer">
-
-                    <span>INGEST</span>
-
-                    <span>UNDERSTAND</span>
-
-                    <span>STRUCTURE</span>
-
-                    <span>ENABLE AI</span>
-
-                </div>
-
             </div>
 
         </div>
@@ -313,106 +498,9 @@
 
 
 
-<!-- =========================================================
-     PROBLEM SECTION
-========================================================= -->
-
-<section class="problem-section">
-
-    <div class="section-container">
-
-
-        <div class="section-heading left">
-
-            <span class="section-label">
-                THE CHALLENGE
-            </span>
-
-            <h2>
-                Enterprise data is everywhere.
-                <span>AI-ready data is not.</span>
-            </h2>
-
-        </div>
-
-
-        <div class="problem-grid">
-
-
-            <div class="problem-text">
-
-                <p>
-
-                    Organizations operate across years of
-                    documents, reports, scanned records, images,
-                    spreadsheets, databases and legacy systems.
-
-                </p>
-
-                <p>
-
-                    The challenge is not simply generating another
-                    AI model. The challenge is making the underlying
-                    information reliable, accessible and usable by
-                    intelligent systems.
-
-                </p>
-
-            </div>
-
-
-            <div class="data-types">
-
-
-                <div class="data-type">
-                    <i class="fa-regular fa-file-lines"></i>
-                    <span>Documents</span>
-                </div>
-
-
-                <div class="data-type">
-                    <i class="fa-regular fa-file-pdf"></i>
-                    <span>PDFs & Reports</span>
-                </div>
-
-
-                <div class="data-type">
-                    <i class="fa-regular fa-image"></i>
-                    <span>Images</span>
-                </div>
-
-
-                <div class="data-type">
-                    <i class="fa-solid fa-table"></i>
-                    <span>Tables</span>
-                </div>
-
-
-                <div class="data-type">
-                    <i class="fa-solid fa-server"></i>
-                    <span>Legacy Systems</span>
-                </div>
-
-
-                <div class="data-type">
-                    <i class="fa-solid fa-video"></i>
-                    <span>Video</span>
-                </div>
-
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================================================
-     PLATFORM
-========================================================= -->
+<!-- =====================================================
+     PLATFORM INTRO
+===================================================== -->
 
 <section id="platform" class="platform-section">
 
@@ -426,16 +514,14 @@
             </span>
 
             <h2>
-                From raw enterprise data
+                From enterprise data
                 <span>to AI-ready intelligence.</span>
             </h2>
 
             <p>
-
-                Our research focuses on the intelligence layer
-                between enterprise information and downstream
+                Vynq focuses on the intelligence layer between
+                complex enterprise information and downstream
                 AI systems.
-
             </p>
 
         </div>
@@ -444,16 +530,12 @@
         <div class="platform-grid">
 
 
-            <!-- CARD 1 -->
-
             <article class="platform-card">
 
-                <div class="card-number">
-                    01
-                </div>
+                <span class="card-number">01</span>
 
                 <div class="card-icon">
-                    <i class="fa-solid fa-arrow-down-wide-short"></i>
+                    <i class="fa-solid fa-database"></i>
                 </div>
 
                 <h3>
@@ -461,14 +543,12 @@
                 </h3>
 
                 <p>
-
-                    Connect and ingest heterogeneous enterprise
-                    information from documents, files, databases,
-                    images and legacy sources.
-
+                    Connect and ingest heterogeneous information
+                    from documents, files, databases, images and
+                    legacy sources.
                 </p>
 
-                <div class="card-tags">
+                <div class="tags">
 
                     <span>Connectors</span>
                     <span>Parsing</span>
@@ -479,14 +559,9 @@
             </article>
 
 
-
-            <!-- CARD 2 -->
-
             <article class="platform-card featured">
 
-                <div class="card-number">
-                    02
-                </div>
+                <span class="card-number">02</span>
 
                 <div class="card-icon">
                     <i class="fa-solid fa-brain"></i>
@@ -497,14 +572,11 @@
                 </h3>
 
                 <p>
-
                     Understand text, images, documents, tables,
-                    layouts and other complex information using
-                    multimodal AI.
-
+                    layouts and other complex information.
                 </p>
 
-                <div class="card-tags">
+                <div class="tags">
 
                     <span>OCR</span>
                     <span>Vision</span>
@@ -515,14 +587,9 @@
             </article>
 
 
-
-            <!-- CARD 3 -->
-
             <article class="platform-card">
 
-                <div class="card-number">
-                    03
-                </div>
+                <span class="card-number">03</span>
 
                 <div class="card-icon">
                     <i class="fa-solid fa-diagram-project"></i>
@@ -533,14 +600,11 @@
                 </h3>
 
                 <p>
-
                     Transform extracted information into structured,
-                    validated and traceable representations suitable
-                    for AI systems.
-
+                    validated and traceable representations.
                 </p>
 
-                <div class="card-tags">
+                <div class="tags">
 
                     <span>Extraction</span>
                     <span>Validation</span>
@@ -551,17 +615,12 @@
             </article>
 
 
-
-            <!-- CARD 4 -->
-
             <article class="platform-card">
 
-                <div class="card-number">
-                    04
-                </div>
+                <span class="card-number">04</span>
 
                 <div class="card-icon">
-                    <i class="fa-solid fa-network-wired"></i>
+                    <i class="fa-solid fa-robot"></i>
                 </div>
 
                 <h3>
@@ -569,14 +628,11 @@
                 </h3>
 
                 <p>
-
-                    Provide reliable enterprise context for retrieval,
-                    knowledge systems, AI agents and intelligent
-                    applications.
-
+                    Provide reliable enterprise context for RAG,
+                    knowledge systems, AI agents and applications.
                 </p>
 
-                <div class="card-tags">
+                <div class="tags">
 
                     <span>RAG</span>
                     <span>Knowledge</span>
@@ -595,9 +651,9 @@
 
 
 
-<!-- =========================================================
+<!-- =====================================================
      RESEARCH
-========================================================= -->
+===================================================== -->
 
 <section id="research" class="research-section">
 
@@ -621,143 +677,116 @@
         <div class="research-list">
 
 
-            <article class="research-item">
+            <div class="research-item">
 
-                <div class="research-index">
-                    01
-                </div>
+                <span class="research-number">01</span>
 
-                <div class="research-content">
+                <div>
 
                     <h3>
                         Enterprise Data Intelligence
                     </h3>
 
                     <p>
-
-                        Methods for reliable ingestion and
-                        transformation of heterogeneous and
-                        unstructured enterprise information.
-
+                        Reliable ingestion and transformation of
+                        heterogeneous and unstructured enterprise
+                        information.
                     </p>
 
                 </div>
 
                 <i class="fa-solid fa-arrow-up-right-from-square"></i>
 
-            </article>
+            </div>
 
 
+            <div class="research-item">
 
-            <article class="research-item">
+                <span class="research-number">02</span>
 
-                <div class="research-index">
-                    02
-                </div>
-
-                <div class="research-content">
+                <div>
 
                     <h3>
                         Multimodal AI
                     </h3>
 
                     <p>
-
-                        Models and systems that jointly understand
-                        text, images, documents, tables and other
-                        modalities.
-
+                        Systems that jointly understand text,
+                        images, documents, tables and other modalities.
                     </p>
 
                 </div>
 
                 <i class="fa-solid fa-arrow-up-right-from-square"></i>
 
-            </article>
+            </div>
 
 
+            <div class="research-item">
 
-            <article class="research-item">
+                <span class="research-number">03</span>
 
-                <div class="research-index">
-                    03
-                </div>
-
-                <div class="research-content">
+                <div>
 
                     <h3>
                         Efficient Foundation Models
                     </h3>
 
                     <p>
-
                         Efficient adaptation and deployment of
-                        foundation models for specialized
-                        enterprise environments.
-
+                        foundation models for specialized environments.
                     </p>
 
                 </div>
 
                 <i class="fa-solid fa-arrow-up-right-from-square"></i>
 
-            </article>
+            </div>
 
 
+            <div class="research-item">
 
-            <article class="research-item">
+                <span class="research-number">04</span>
 
-                <div class="research-index">
-                    04
-                </div>
-
-                <div class="research-content">
+                <div>
 
                     <h3>
                         Multimodal & Visual Intelligence
                     </h3>
 
                     <p>
-
                         Computer vision and visual understanding
-                        for documents, industrial environments,
-                        inspection and real-world applications.
-
+                        for documents, inspection and real-world
+                        environments.
                     </p>
 
                 </div>
 
                 <i class="fa-solid fa-arrow-up-right-from-square"></i>
 
-            </article>
+            </div>
 
 
+            <div class="research-item">
 
-            <article class="research-item">
+                <span class="research-number">05</span>
 
-                <div class="research-index">
-                    05
-                </div>
-
-                <div class="research-content">
+                <div>
 
                     <h3>
                         AI Reliability & Evaluation
                     </h3>
 
                     <p>
-
-                        Research into grounding, extraction quality,
-                        confidence, evaluation and traceability of
-                        AI-generated information.
-
+                        Grounding, confidence, extraction quality,
+                        evaluation and traceability of AI systems.
                     </p>
 
                 </div>
 
                 <i class="fa-solid fa-arrow-up-right-from-square"></i>
 
-            </article>
+            </div>
 
 
         </div>
@@ -768,9 +797,9 @@
 
 
 
-<!-- =========================================================
+<!-- =====================================================
      APPLICATIONS
-========================================================= -->
+===================================================== -->
 
 <section id="applications" class="applications-section">
 
@@ -784,8 +813,8 @@
             </span>
 
             <h2>
-                Research that can move into
-                <span>real-world systems.</span>
+                From research
+                <span>to real-world systems.</span>
             </h2>
 
         </div>
@@ -805,14 +834,11 @@
                 </h3>
 
                 <p>
-
                     Transform fragmented organizational information
                     into searchable and AI-ready knowledge.
-
                 </p>
 
             </article>
-
 
 
             <article class="application-card">
@@ -826,14 +852,11 @@
                 </h3>
 
                 <p>
-
                     Understand complex PDFs, scanned documents,
-                    forms, reports and structured tables.
-
+                    forms, reports and tables.
                 </p>
 
             </article>
-
 
 
             <article class="application-card">
@@ -847,14 +870,11 @@
                 </h3>
 
                 <p>
-
                     Apply AI to technical records, inspections,
                     maintenance information and operational data.
-
                 </p>
 
             </article>
-
 
 
             <article class="application-card">
@@ -868,15 +888,12 @@
                 </h3>
 
                 <p>
-
                     Computer vision for visual inspection,
                     document understanding and real-world
-                    visual environments.
-
+                    environments.
                 </p>
 
             </article>
-
 
 
             <article class="application-card">
@@ -890,14 +907,11 @@
                 </h3>
 
                 <p>
-
-                    Give intelligent systems reliable,
-                    structured and traceable enterprise context.
-
+                    Give intelligent systems reliable, structured
+                    and traceable enterprise context.
                 </p>
 
             </article>
-
 
 
             <article class="application-card">
@@ -911,10 +925,8 @@
                 </h3>
 
                 <p>
-
                     Convert complex enterprise information into
                     useful signals for analysis and decision support.
-
                 </p>
 
             </article>
@@ -928,124 +940,64 @@
 
 
 
-<!-- =========================================================
+<!-- =====================================================
      ABOUT
-========================================================= -->
+===================================================== -->
 
 <section id="about" class="about-section">
 
     <div class="section-container">
 
-
         <div class="about-grid">
 
 
-            <div class="about-content">
+            <div>
 
                 <span class="section-label">
                     ABOUT VYNQ
                 </span>
 
                 <h2>
-
                     Building the intelligence layer
                     between enterprise data and AI.
-
                 </h2>
 
                 <p>
-
                     Vynq Research Labs is focused on applied
                     research and engineering at the intersection
                     of enterprise data, multimodal AI and
                     intelligent systems.
-
                 </p>
 
                 <p>
-
                     Our focus is not only on building models,
                     but on solving the systems problem around AI:
                     how complex information is collected,
                     understood, structured, validated and made
                     usable by intelligent applications.
-
                 </p>
 
-
-                <div class="about-points">
-
-                    <div>
-                        <i class="fa-solid fa-check"></i>
-                        Research-driven engineering
-                    </div>
-
-                    <div>
-                        <i class="fa-solid fa-check"></i>
-                        Enterprise-focused AI
-                    </div>
-
-                    <div>
-                        <i class="fa-solid fa-check"></i>
-                        Multimodal intelligence
-                    </div>
-
-                </div>
-
             </div>
-
 
 
             <div class="about-visual">
 
-                <div class="about-box">
+                <div class="about-equation">
 
-                    <div class="about-box-top">
+                    <span>DATA</span>
 
-                        <span>
-                            VYNQ / RESEARCH
-                        </span>
+                    <i class="fa-solid fa-arrow-right"></i>
 
-                        <span>
-                            01
-                        </span>
+                    <span>INTELLIGENCE</span>
 
-                    </div>
+                    <i class="fa-solid fa-arrow-right"></i>
 
-
-                    <div class="about-equation">
-
-                        <span>
-                            DATA
-                        </span>
-
-                        <i class="fa-solid fa-arrow-right"></i>
-
-                        <span>
-                            INTELLIGENCE
-                        </span>
-
-                        <i class="fa-solid fa-arrow-right"></i>
-
-                        <span>
-                            AI
-                        </span>
-
-                    </div>
-
-
-                    <div class="about-box-lines">
-
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-
-                    </div>
+                    <span>AI</span>
 
                 </div>
 
             </div>
+
 
         </div>
 
@@ -1055,9 +1007,9 @@
 
 
 
-<!-- =========================================================
+<!-- =====================================================
      CONTACT
-========================================================= -->
+===================================================== -->
 
 <section id="contact" class="contact-section">
 
@@ -1067,7 +1019,7 @@
         <div class="contact-box">
 
 
-            <div class="contact-content">
+            <div class="contact-intro">
 
                 <span class="section-label">
                     CONNECT
@@ -1079,11 +1031,9 @@
                 </h2>
 
                 <p>
-
                     We are interested in research collaborations,
                     technology exploration and opportunities to
                     solve difficult data and AI problems.
-
                 </p>
 
             </div>
@@ -1091,20 +1041,22 @@
 
             <form class="contact-form">
 
+
                 <div class="form-row">
 
                     <input
                         type="text"
                         name="name"
                         placeholder="Your Name"
-                        required>
-
+                        required
+                    >
 
                     <input
                         type="email"
                         name="email"
                         placeholder="Your Email"
-                        required>
+                        required
+                    >
 
                 </div>
 
@@ -1112,14 +1064,16 @@
                 <input
                     type="text"
                     name="organization"
-                    placeholder="Organization / Company">
+                    placeholder="Organization / Company"
+                >
 
 
                 <textarea
                     name="message"
-                    rows="5"
                     placeholder="Tell us about your research or AI challenge..."
-                    required></textarea>
+                    rows="5"
+                    required
+                ></textarea>
 
 
                 <button
@@ -1132,6 +1086,7 @@
 
                 </button>
 
+
             </form>
 
 
@@ -1141,11 +1096,13 @@
 
 </section>
 
+</main>
 
 
-<!-- =========================================================
+
+<!-- =====================================================
      FOOTER
-========================================================= -->
+===================================================== -->
 
 <footer>
 
@@ -1154,30 +1111,26 @@
 
         <div class="footer-brand">
 
-            <img
-                src="logo.png"
-                alt="Vynq Research Labs Logo">
+            <div class="footer-vynq">
+                VYNQ
+            </div>
 
-            <div>
-
-                <strong>VYNQ</strong>
-
-                <span>Research Labs</span>
-
+            <div class="footer-labs">
+                RESEARCH LABS
             </div>
 
         </div>
 
 
-        <div class="footer-text">
+        <div class="footer-center">
 
             <p>
                 Enterprise AI Infrastructure & Applied Research
             </p>
 
-            <p class="copyright">
+            <span>
                 © 2026 Vynq Research Labs. All Rights Reserved.
-            </p>
+            </span>
 
         </div>
 
@@ -1200,8 +1153,6 @@
 </footer>
 
 
-
-<!-- JavaScript -->
 
 <script src="script.js"></script>
 
