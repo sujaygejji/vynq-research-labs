@@ -3,112 +3,48 @@
 // MAIN JAVASCRIPT
 // =========================================================
 
-
-// Wait until the complete HTML page is loaded
 document.addEventListener("DOMContentLoaded", function () {
 
 
     // =====================================================
-    // 1. SELECT IMPORTANT ELEMENTS
+    // ELEMENTS
     // =====================================================
 
     const navbar =
         document.querySelector(".navbar");
 
-    const navLinks =
-        document.querySelectorAll(
-            ".nav-menu a, .hero-buttons a, .footer-links a"
-        );
-
     const navMenu =
         document.querySelector(".nav-menu");
 
-    const mobileMenuButton =
-        document.querySelector(".mobile-menu-btn");
+    const mobileButton =
+        document.querySelector(".mobile-menu-button");
+
+    const navLinks =
+        document.querySelectorAll(
+            ".nav-menu a"
+        );
+
+    const allInternalLinks =
+        document.querySelectorAll(
+            'a[href^="#"]'
+        );
 
 
 
     // =====================================================
-    // 2. SMOOTH SCROLLING WITH NAVBAR OFFSET
+    // MOBILE MENU
     // =====================================================
 
-    navLinks.forEach(function (link) {
+    if (mobileButton) {
 
-        link.addEventListener("click", function (event) {
-
-            const targetId =
-                this.getAttribute("href");
-
-
-            // Only process internal links
-            if (
-                targetId &&
-                targetId.startsWith("#")
-            ) {
-
-                event.preventDefault();
-
-
-                const targetSection =
-                    document.querySelector(targetId);
-
-
-                if (targetSection) {
-
-                    const navbarHeight =
-                        navbar
-                            ? navbar.offsetHeight
-                            : 0;
-
-
-                    const sectionPosition =
-                        targetSection.getBoundingClientRect().top +
-                        window.scrollY;
-
-
-                    window.scrollTo({
-
-                        top:
-                            sectionPosition -
-                            navbarHeight,
-
-                        behavior: "smooth"
-
-                    });
-
-                }
-
-
-                // Close mobile menu
-                if (navMenu) {
-
-                    navMenu.classList.remove("active");
-
-                }
-
-            }
-
-        });
-
-    });
-
-
-
-    // =====================================================
-    // 3. MOBILE NAVIGATION
-    // =====================================================
-
-    if (mobileMenuButton) {
-
-        mobileMenuButton.addEventListener(
+        mobileButton.addEventListener(
             "click",
             function () {
 
                 navMenu.classList.toggle("active");
 
-
                 const icon =
-                    mobileMenuButton.querySelector("i");
+                    mobileButton.querySelector("i");
 
 
                 if (
@@ -143,7 +79,97 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     // =====================================================
-    // 4. NAVBAR SHADOW WHEN SCROLLING
+    // SMOOTH SCROLLING
+    // =====================================================
+
+    allInternalLinks.forEach(function (link) {
+
+        link.addEventListener(
+            "click",
+            function (event) {
+
+                const targetId =
+                    this.getAttribute("href");
+
+
+                if (
+                    targetId &&
+                    targetId.startsWith("#")
+                ) {
+
+                    const target =
+                        document.querySelector(
+                            targetId
+                        );
+
+
+                    if (target) {
+
+                        event.preventDefault();
+
+
+                        const navbarHeight =
+                            navbar
+                                ? navbar.offsetHeight
+                                : 0;
+
+
+                        const targetPosition =
+                            target.getBoundingClientRect().top +
+                            window.scrollY;
+
+
+                        window.scrollTo({
+
+                            top:
+                                targetPosition -
+                                navbarHeight,
+
+                            behavior: "smooth"
+
+                        });
+
+                    }
+
+
+                    if (navMenu) {
+
+                        navMenu.classList.remove(
+                            "active"
+                        );
+
+                    }
+
+
+                    if (mobileButton) {
+
+                        const icon =
+                            mobileButton.querySelector(
+                                "i"
+                            );
+
+
+                        icon.classList.remove(
+                            "fa-xmark"
+                        );
+
+                        icon.classList.add(
+                            "fa-bars"
+                        );
+
+                    }
+
+                }
+
+            }
+        );
+
+    });
+
+
+
+    // =====================================================
+    // NAVBAR SHADOW
     // =====================================================
 
     function updateNavbar() {
@@ -156,7 +182,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (window.scrollY > 30) {
 
             navbar.style.boxShadow =
-                "0 8px 25px rgba(16, 35, 63, 0.08)";
+                "0 8px 28px rgba(16, 35, 63, 0.08)";
 
         } else {
 
@@ -179,137 +205,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     // =====================================================
-    // 5. CONTACT FORM
-    // =====================================================
-
-    const contactForm =
-        document.querySelector(".contact-form");
-
-
-    if (contactForm) {
-
-        contactForm.addEventListener(
-            "submit",
-            function (event) {
-
-                event.preventDefault();
-
-
-                const name =
-                    contactForm.querySelector(
-                        'input[name="name"]'
-                    ).value;
-
-
-                const email =
-                    contactForm.querySelector(
-                        'input[name="email"]'
-                    ).value;
-
-
-                const message =
-                    contactForm.querySelector(
-                        'textarea[name="message"]'
-                    ).value;
-
-
-                if (
-                    name.trim() === "" ||
-                    email.trim() === "" ||
-                    message.trim() === ""
-                ) {
-
-                    alert(
-                        "Please fill in the required fields."
-                    );
-
-                    return;
-
-                }
-
-
-                /*
-                    The form currently has no backend.
-
-                    Later you can connect this form to:
-
-                    - Web3Forms
-                    - Formspree
-                    - Your own backend
-                    - Google Forms
-                    - Email API
-                */
-
-
-                alert(
-                    "Thank you. Your message has been recorded for this demo."
-                );
-
-
-                contactForm.reset();
-
-            }
-        );
-
-    }
-
-
-
-    // =====================================================
-    // 6. RESEARCH ITEM HOVER INTERACTION
-    // =====================================================
-
-    const researchItems =
-        document.querySelectorAll(
-            ".research-item"
-        );
-
-
-    researchItems.forEach(function (item) {
-
-        item.addEventListener(
-            "mouseenter",
-            function () {
-
-                const arrow =
-                    item.querySelector("i");
-
-
-                if (arrow) {
-
-                    arrow.style.transform =
-                        "translate(3px, -3px)";
-
-                }
-
-            }
-        );
-
-
-        item.addEventListener(
-            "mouseleave",
-            function () {
-
-                const arrow =
-                    item.querySelector("i");
-
-
-                if (arrow) {
-
-                    arrow.style.transform =
-                        "translate(0, 0)";
-
-                }
-
-            }
-        );
-
-    });
-
-
-
-    // =====================================================
-    // 7. UPDATE ACTIVE NAVIGATION ITEM
+    // ACTIVE NAVIGATION
     // =====================================================
 
     const sections =
@@ -320,24 +216,23 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function updateActiveNavigation() {
 
-        let currentSection = "";
+        let currentSection = "home";
 
 
         sections.forEach(function (section) {
 
             const sectionTop =
-                section.offsetTop -
-                150;
+                section.offsetTop - 160;
 
 
-            const sectionHeight =
+            const sectionBottom =
+                sectionTop +
                 section.offsetHeight;
 
 
             if (
                 window.scrollY >= sectionTop &&
-                window.scrollY <
-                sectionTop + sectionHeight
+                window.scrollY < sectionBottom
             ) {
 
                 currentSection =
@@ -353,12 +248,8 @@ document.addEventListener("DOMContentLoaded", function () {
             link.classList.remove("active");
 
 
-            const linkTarget =
-                link.getAttribute("href");
-
-
             if (
-                linkTarget ===
+                link.getAttribute("href") ===
                 "#" + currentSection
             ) {
 
@@ -379,5 +270,125 @@ document.addEventListener("DOMContentLoaded", function () {
 
     updateActiveNavigation();
 
+
+
+    // =====================================================
+    // CONTACT FORM
+    // =====================================================
+
+    const contactForm =
+        document.querySelector(".contact-form");
+
+
+    if (contactForm) {
+
+        contactForm.addEventListener(
+            "submit",
+            function (event) {
+
+                event.preventDefault();
+
+
+                const name =
+                    contactForm.querySelector(
+                        'input[name="name"]'
+                    ).value.trim();
+
+
+                const email =
+                    contactForm.querySelector(
+                        'input[name="email"]'
+                    ).value.trim();
+
+
+                const message =
+                    contactForm.querySelector(
+                        'textarea[name="message"]'
+                    ).value.trim();
+
+
+                if (
+                    name === "" ||
+                    email === "" ||
+                    message === ""
+                ) {
+
+                    alert(
+                        "Please fill in all required fields."
+                    );
+
+                    return;
+
+                }
+
+
+                alert(
+                    "Thank you. Your message has been received."
+                );
+
+
+                contactForm.reset();
+
+            }
+        );
+
+    }
+
+
+
+    // =====================================================
+    // PIPELINE CARD HOVER
+    // =====================================================
+
+    const pipelineSteps =
+        document.querySelectorAll(
+            ".pipeline-step"
+        );
+
+
+    pipelineSteps.forEach(function (step) {
+
+        step.addEventListener(
+            "mouseenter",
+            function () {
+
+                const marker =
+                    step.querySelector(
+                        ".pipeline-marker"
+                    );
+
+
+                if (marker) {
+
+                    marker.style.transform =
+                        "scale(1.06)";
+
+                }
+
+            }
+        );
+
+
+        step.addEventListener(
+            "mouseleave",
+            function () {
+
+                const marker =
+                    step.querySelector(
+                        ".pipeline-marker"
+                    );
+
+
+                if (marker) {
+
+                    marker.style.transform =
+                        "scale(1)";
+
+                }
+
+            }
+        );
+
+    });
 
 });
