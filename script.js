@@ -20,14 +20,10 @@ document.addEventListener("DOMContentLoaded", function () {
         document.querySelector(".mobile-menu-button");
 
     const navLinks =
-        document.querySelectorAll(
-            ".nav-menu a"
-        );
+        document.querySelectorAll(".nav-menu a");
 
-    const allInternalLinks =
-        document.querySelectorAll(
-            'a[href^="#"]'
-        );
+    const internalLinks =
+        document.querySelectorAll('a[href^="#"]');
 
 
 
@@ -51,23 +47,15 @@ document.addEventListener("DOMContentLoaded", function () {
                     navMenu.classList.contains("active")
                 ) {
 
-                    icon.classList.remove(
-                        "fa-bars"
-                    );
+                    icon.classList.remove("fa-bars");
 
-                    icon.classList.add(
-                        "fa-xmark"
-                    );
+                    icon.classList.add("fa-xmark");
 
                 } else {
 
-                    icon.classList.remove(
-                        "fa-xmark"
-                    );
+                    icon.classList.remove("fa-xmark");
 
-                    icon.classList.add(
-                        "fa-bars"
-                    );
+                    icon.classList.add("fa-bars");
 
                 }
 
@@ -79,10 +67,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     // =====================================================
-    // SMOOTH SCROLLING
+    // SMOOTH SCROLL
     // =====================================================
 
-    allInternalLinks.forEach(function (link) {
+    internalLinks.forEach(function (link) {
 
         link.addEventListener(
             "click",
@@ -98,9 +86,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 ) {
 
                     const target =
-                        document.querySelector(
-                            targetId
-                        );
+                        document.querySelector(targetId);
 
 
                     if (target) {
@@ -134,9 +120,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
                     if (navMenu) {
 
-                        navMenu.classList.remove(
-                            "active"
-                        );
+                        navMenu.classList.remove("active");
 
                     }
 
@@ -144,18 +128,12 @@ document.addEventListener("DOMContentLoaded", function () {
                     if (mobileButton) {
 
                         const icon =
-                            mobileButton.querySelector(
-                                "i"
-                            );
+                            mobileButton.querySelector("i");
 
 
-                        icon.classList.remove(
-                            "fa-xmark"
-                        );
+                        icon.classList.remove("fa-xmark");
 
-                        icon.classList.add(
-                            "fa-bars"
-                        );
+                        icon.classList.add("fa-bars");
 
                     }
 
@@ -179,10 +157,10 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
 
-        if (window.scrollY > 30) {
+        if (window.scrollY > 25) {
 
             navbar.style.boxShadow =
-                "0 8px 28px rgba(16, 35, 63, 0.08)";
+                "0 7px 25px rgba(16, 35, 63, 0.08)";
 
         } else {
 
@@ -209,9 +187,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // =====================================================
 
     const sections =
-        document.querySelectorAll(
-            "section[id]"
-        );
+        document.querySelectorAll("section[id]");
 
 
     function updateActiveNavigation() {
@@ -222,7 +198,7 @@ document.addEventListener("DOMContentLoaded", function () {
         sections.forEach(function (section) {
 
             const sectionTop =
-                section.offsetTop - 160;
+                section.offsetTop - 140;
 
 
             const sectionBottom =
@@ -273,6 +249,57 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     // =====================================================
+    // PIPELINE HOVER
+    // =====================================================
+
+    const pipelineSteps =
+        document.querySelectorAll(".pipeline-step");
+
+
+    pipelineSteps.forEach(function (step) {
+
+        step.addEventListener(
+            "mouseenter",
+            function () {
+
+                const marker =
+                    step.querySelector(".pipeline-marker");
+
+
+                if (marker) {
+
+                    marker.style.transform =
+                        "scale(1.05)";
+
+                }
+
+            }
+        );
+
+
+        step.addEventListener(
+            "mouseleave",
+            function () {
+
+                const marker =
+                    step.querySelector(".pipeline-marker");
+
+
+                if (marker) {
+
+                    marker.style.transform =
+                        "scale(1)";
+
+                }
+
+            }
+        );
+
+    });
+
+
+
+    // =====================================================
     // CONTACT FORM
     // =====================================================
 
@@ -290,21 +317,30 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
                 const name =
-                    contactForm.querySelector(
-                        'input[name="name"]'
-                    ).value.trim();
+                    contactForm
+                        .querySelector(
+                            'input[name="name"]'
+                        )
+                        .value
+                        .trim();
 
 
                 const email =
-                    contactForm.querySelector(
-                        'input[name="email"]'
-                    ).value.trim();
+                    contactForm
+                        .querySelector(
+                            'input[name="email"]'
+                        )
+                        .value
+                        .trim();
 
 
                 const message =
-                    contactForm.querySelector(
-                        'textarea[name="message"]'
-                    ).value.trim();
+                    contactForm
+                        .querySelector(
+                            'textarea[name="message"]'
+                        )
+                        .value
+                        .trim();
 
 
                 if (
@@ -333,62 +369,5 @@ document.addEventListener("DOMContentLoaded", function () {
         );
 
     }
-
-
-
-    // =====================================================
-    // PIPELINE CARD HOVER
-    // =====================================================
-
-    const pipelineSteps =
-        document.querySelectorAll(
-            ".pipeline-step"
-        );
-
-
-    pipelineSteps.forEach(function (step) {
-
-        step.addEventListener(
-            "mouseenter",
-            function () {
-
-                const marker =
-                    step.querySelector(
-                        ".pipeline-marker"
-                    );
-
-
-                if (marker) {
-
-                    marker.style.transform =
-                        "scale(1.06)";
-
-                }
-
-            }
-        );
-
-
-        step.addEventListener(
-            "mouseleave",
-            function () {
-
-                const marker =
-                    step.querySelector(
-                        ".pipeline-marker"
-                    );
-
-
-                if (marker) {
-
-                    marker.style.transform =
-                        "scale(1)";
-
-                }
-
-            }
-        );
-
-    });
 
 });
